@@ -14,6 +14,22 @@
    {{ Form::text('email') }}
 </div>
 <div>
+   {{ Form::label('username', 'User Name: ') }}
+   {{ Form::text('username') }}
+</div>
+<div>
+   {{ Form::label('city', 'City: ') }}
+   {{ Form::text('city') }}
+</div>
+<div>
+   {{ Form::label('state', 'State: ') }}
+   {{ Form::text('state') }}
+</div>
+<div>
+   {{ Form::label('age', 'Age: ') }}
+   {{ Form::text('age') }}
+</div>
+<div>
    {{ Form::submit('Create User') }}
 </div>
 {{ Form::close() }}

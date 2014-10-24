@@ -7,6 +7,8 @@
 <div class="col-md-4">
 @foreach ($users as $user)
     <p>This is user {{ $user->name }}. Email is {{ $user->email }}</p>
+    <p>Their username is {{ $user->username }}. They live in {{ $user->city }} 
+    , {{ $user->state  }} and they're {{ $user->age }} years old. </p>
 @endforeach
 </div>
 

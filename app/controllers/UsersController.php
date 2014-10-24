@@ -37,6 +37,10 @@ class UsersController extends \BaseController {
 		$user = new User;
 		$user->name = Input::get('name');
 		$user->email = Input::get('email');
+		$user->username = Input::get('username');
+		$user->city = Input::get('city');
+		$user->state = Input::get('state');
+		$user->age = Input::get('age');
 		$user->save();
 		
 		return Redirect::route('users.index');
