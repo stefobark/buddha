@@ -2,9 +2,9 @@
 <html lang='en'>
 <head>
 <meta name='viewport' content='width=device-width, initial-scale=1', user-scalable=no'>
-<link href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' rel='stylesheet'>
-<script src="http://code.jquery.com/jquery.js"></script>
-<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+<link href='/css/bootstrap.min.css' rel='stylesheet'>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src='/js/bootstrap.min.js'></script>
 </head>
 
 <style>
