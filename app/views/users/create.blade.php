@@ -18,12 +18,20 @@
    {{ Form::text('username') }}
 </div>
 <div>
+   {{ Form::label('address', 'Street Address: ') }}
+   {{ Form::text('address') }}
+</div>
+<div>
    {{ Form::label('city', 'City: ') }}
    {{ Form::text('city') }}
 </div>
 <div>
    {{ Form::label('state', 'State: ') }}
    {{ Form::text('state') }}
+</div>
+<div>
+   {{ Form::label('zip', 'Zip Code: ') }}
+   {{ Form::text('zip') }}
 </div>
 <div>
    {{ Form::label('age', 'Age: ') }}

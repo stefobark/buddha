@@ -13,7 +13,7 @@ return array(
 	|
 	*/
 
-	'debug' => false,
+	'debug' => true,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -192,4 +192,6 @@ return array(
 		 
 	),
 
+'cipher' => MCRYPT_RIJNDAEL_256
 );
+
