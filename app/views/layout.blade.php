@@ -102,6 +102,7 @@ body {
          	<li><a href="/about"><strong>about</strong></a></li>
         	 	<li><a href="/users/create"><strong>sign up</strong></a></li>
          	<li><a href="/blog"><strong>blog</strong></a></li>
+         	<li><a href="{{URL::to('signout')}}"><strong>sign out</strong></a></li>
        	</ul>
      	</div><!--/.nav-collapse -->
 	</div><!--/.container -->

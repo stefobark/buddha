@@ -6,10 +6,11 @@
 <div class="col-md-4"></div>
 <div class="col-md-4">
 @foreach ($users as $user)
-    <p>This is user {{ $user->name }}. Email is {{ $user->email }}</p>
-    <p>Their username is {{ $user->username }}. They live in {{ $user->city }} 
+    <p>This is user <strong> {{ $user->name }} </strong>. Email is <strong>{{ $user->email }}</strong></p>
+    <p>Their username is <strong>{{ $user->username }}</strong>. They live in <strong>{{ $user->city }}</strong> 
     , {{ $user->state  }} and they're {{ $user->age }} years old. Their zipcode is {{ $user->zip }}
-     and their street address is {{ $user->address }}. AND!! they are in legislative district: {{ $user->leg_district }}</p>
+     and their street address is {{ $user->address }}. AND!! their lat/long is {{ $user->lat_long }} -- so, they are in legislative district: {{ $user->leg_district }}</p>
+	 <br /> THE PASSWORD HASH IS: {{ $user->password }} <br /><br />
 @endforeach
 </div>
 

@@ -17,6 +17,8 @@
    {{ Form::label('username', 'User Name: ') }}
    {{ Form::text('username') }}
 </div>
+	{{ Form::label('password', 'Password') }}
+	{{ Form::password('password') }}
 <div>
    {{ Form::label('address', 'Street Address: ') }}
    {{ Form::text('address') }}
