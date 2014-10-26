@@ -115,7 +115,7 @@ class UsersController extends \BaseController {
 
     Auth::logout();
     Session::flush();
-    return Redirect::to('login');
+    return Redirect::to('');
 
 }
 
@@ -165,6 +165,7 @@ class UsersController extends \BaseController {
 	{
 		// validate the info, create rules for the inputs
 		$rules = array(
+			'username' => 'required' ,//username
 			'password' => 'required|alphaNum|min:3' // password can only be alphanumeric and has to be greater than 3 characters
 		);
 
@@ -180,6 +181,7 @@ class UsersController extends \BaseController {
 
 			// create our user data for the authentication
 			$userdata = array(
+				'username' => Input::get('username'),
 				'password' 	=> Input::get('password')
 			);
 
