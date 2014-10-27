@@ -12,4 +12,8 @@
     So, they are in legislative district: {{ $user->leg_district }}</p>
 	 <br /> THE PASSWORD HASH IS: {{ $user->password }} <br /><br />
 	 <pre> {{ var_dump($q) }} </pre>
+	 <pre> {{ var_dump($l_primary) }} </pre>
+	  <pre> {{ var_dump($u_primary) }} </pre>
+	  
+	  <pre> {{ var_dump($test) }} </pre>
 @stop
