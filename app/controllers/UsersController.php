@@ -39,32 +39,27 @@ class UsersController extends \BaseController {
 		$user->email = Input::get('email');
 		$user->username = Input::get('username');
 		$user->password = Hash::make(Input::get('password'));
-		$user->city = Input::get('city');
-		$user->state = Input::get('state');
-		$user->address = Input::get('address');
-		$user->zip = Input::get('zip');
 		$user->age = Input::get('age');
 		$user->id = Input::get('id');
-		$id = $user->id;
 		
 		//new guzzle client
 		$client = new \GuzzleHttp\Client();
 			 
 	 	//build string for get request to geocoder using form info
-	 	if (!empty($user->address)) {
-	 		$get_this = "street=" . str_replace(' ', '+', $user->address);
+	 	if (!empty(Input::get('address'))) {
+	 		$get_this = "street=" . str_replace(' ', '+', Input::get('address'));
 	 	}
 	 	
-	 	if (!empty($user->city)) {
-		  $get_this .= "&city=" . $user->city;
+	 	if (!empty(Input::get('city'))) {
+		  $get_this .= "&city=" . Input::get('city');
 	 	}
 	 
-	 	if (!empty($user->state)) {
-		  $get_this .= "&state=" . $user->state;
+	 	if (!empty(Input::get('state'))) {
+		  $get_this .= "&state=" . Input::get('state');
 	 	}
 	 
-	 	if (!empty($user->zip)) {
-		  $get_this .= "&zip=" . $user->zip;
+	 	if (!empty(Input::get('zip'))) {
+		  $get_this .= "&zip=" . Input::get('zip');
 	 	}
 	 	
 		//then, add this stuff to the end of the string
@@ -86,8 +81,14 @@ class UsersController extends \BaseController {
 		//now, hit the shapefile/mysql table with the long/lat and get their district
 		$get_leg = DB::select(DB::raw("select sldlst from tl_2014_53_sldl where ST_CONTAINS(shape, POINT($long, $lat))"));
 		
+		$f_leg = $get_leg[0]->sldlst;
+		
+		if(0 === strpos($get_leg[0]->sldlst, '0')){
+			$f_leg = substr($f_leg, 1);
+			}
+		
 		//store the leg district with the user
-		$user->leg_district = $get_leg[0]->sldlst;
+		$user->leg_district = $f_leg;
 		
 		//save all that stuff (insert)		 
 		$user->save();
@@ -107,8 +108,9 @@ class UsersController extends \BaseController {
 	{
 		$id = Auth::user()->id;
 		$user = User::findOrFail($id);
+		$q = SphinxQL::raw("select json.first_name, json.last_name, json.email, json.office_phone from rt_legs where json.district = '$user->leg_district'");
 		
-		return View::make('users.show')->with('user', $user);
+		return View::make('users.show', array('user' => $user, 'q' => $q));
 	}
 
 	public function signOut() {
