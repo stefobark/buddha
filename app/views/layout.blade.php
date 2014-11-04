@@ -3,13 +3,14 @@
 <head>
 <meta name='viewport' content='width=device-width, initial-scale=1', user-scalable=no'>
 <link href='/css/bootstrap.min.css' rel='stylesheet'>
-<script src="js/jquery-2.1.1.min.js"></script>
+<script src="/js/jquery-2.1.1.min.js"></script>
 <script src='/js/bootstrap.min.js'></script>
 </head>
 
 <style>
+
 .navbar-default {
-    background-color: #58ACFA;
+    background-color: #444;
     border-color: #FFF;
 }
 h2{
@@ -30,7 +31,12 @@ h2{
 .bs-example{
 	margin: 20px;
 }
-.nav a, .navbar-brand{
+
+.navbar .nav > li > a{
+  text-shadow: #333 0.8em 0.8em 0.8em;
+}
+
+.nav a.navbar-brand{
 	color: #fff!important;
 	}
 .row{
@@ -70,25 +76,11 @@ body {
     padding-left: 20px;
     padding-right: 20px;
   }
+  
+#test{
+	color: #fff!important
+	 } 
 }	
-
-
-      /* Custom page CSS
-      -------------------------------------------------- */
-      /* Not required for template or sticky footer method. */
-
-      #wrap > .container {
-        padding-top: 60px;
-      }
-      .container .credit {
-        margin: 20px 0;
-      }
-
-      code {
-        font-size: 80%;
-      }
-
-
 </style>
 <body>
 
@@ -99,7 +91,7 @@ body {
      	</div>
      	<div class="navbar-collapse collapse">
        	<ul class="nav navbar-nav navbar-right">
-        	 	<li><a href="/users/create"><strong>sign up</strong></a></li>
+        	 	<li><a href="/users/create" ><strong><div id="test">sign up</div></strong></a></li>
         	 	<li><a href="/login"><strong>login</strong></a></li>
          	<li><a href="{{URL::to('signout')}}"><strong>sign out</strong></a></li>
        	</ul>
