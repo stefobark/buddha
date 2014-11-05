@@ -116,9 +116,9 @@ class UsersController extends \BaseController {
 		$f_id[] = $id["leg_id"];
 		}
 		
-		$h1 = SphinxQL::raw("select json.id AS b_id, json['versions'][0]['name'] AS name, json['title'] AS title, json['versions'][0]['url'] AS url1, json['sources'][0]['url'] AS url2, json['subjects'] AS subjects from rt_l_bills where json['sponsors'][0]['leg_id']='$f_id[0]'");
-		$h2 = SphinxQL::raw("select json.id AS b_id, json['versions'][0]['name'] AS name, json['title'] AS title, json['versions'][0]['url'] AS url1, json['sources'][0]['url'] AS url2, json['subjects'] AS subjects from rt_u_bills where json['sponsors'][0]['leg_id']='$f_id[1]'");
-		$s = SphinxQL::raw("select json.id AS b_id, json['versions'][0]['name'] AS name, json['title'] AS title, json['versions'][0]['url'] AS url1, json['sources'][0]['url'] AS url2, json['subjects'] AS subjects from rt_u_bills where json['sponsors'][0]['leg_id']='$f_id[2]'");
+		$h1 = SphinxQL::raw("select json.id AS b_id, json['versions'][0]['name'] AS name, json['title'] AS title, json['versions'][0]['url'] AS url1, json['sources'][0]['url'] AS url2, json['subjects'] AS subjects from rt_u_bills where json['sponsors'][0]['leg_id']='$f_id[0]'");
+		$h2 = SphinxQL::raw("select json.id AS b_id, json['versions'][0]['name'] AS name, json['title'] AS title, json['versions'][0]['url'] AS url1, json['sources'][0]['url'] AS url2, json['subjects'] AS subjects from rt_l_bills where json['sponsors'][0]['leg_id']='$f_id[1]'");
+		$s = SphinxQL::raw("select json.id AS b_id, json['versions'][0]['name'] AS name, json['title'] AS title, json['versions'][0]['url'] AS url1, json['sources'][0]['url'] AS url2, json['subjects'] AS subjects from rt_l_bills where json['sponsors'][0]['leg_id']='$f_id[2]'");
 		
 		return View::make('users.show', array('f_id' => $f_id, 'user' => $user, 'q' => $q, 'h1' => $h1, 'h2' => $h2, 's' => $s));
 	}
