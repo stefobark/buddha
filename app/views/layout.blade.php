@@ -34,11 +34,9 @@ h2{
 
 .navbar .nav > li > a{
   text-shadow: #333 0.8em 0.8em 0.8em;
+  color: #fff!important;
 }
 
-.nav a.navbar-brand{
-	color: #fff!important;
-	}
 .row{
 	margin-top:50px;
 	}
@@ -48,39 +46,71 @@ body {
   /* The html and body elements cannot have any padding or margin. */
 }
 
-/* Wrapper for page content to push down footer */
-#wrap {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  /* Negative indent footer by it's height */
-  margin: 0 auto -60px;
-}
-
-/* Set the fixed height of the footer here */
-#push,
-#footer {
-  height: 50px;
-  
-}
-#footer {
-  background-color: #f5f5f5;
-   bottom: 0;
-}
-
-/* Lastly, apply responsive CSS fixes as necessary */
-@media (max-width: 767px) {
-  #footer {
-    margin-left: -20px;
-    margin-right: -20px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  
-#test{
-	color: #fff!important
-	 } 
 }	
+#wrapper {
+  padding-left: 250px;
+  transition: all 0.4s ease 0s;
+}
+
+#sidebar-wrapper {
+  margin-left: -250px;
+  margin-top: -30px;
+  left: 250px;
+  width: 250px;
+  background: #999;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+}
+
+#page-content-wrapper {
+  width: 100%;
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  list-style: none;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.pols {
+	background: #fff;
+	box-shadow: 10px 10px 5px #888888;
+	border: 2px solid;
+    border-radius: 25px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+	}
+
+@media (max-width:767px) {
+
+    #wrapper {
+      padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+      left: 0;
+    }
+
+    #wrapper.active {
+      position: relative;
+      left: 250px;
+    }
+
+    #wrapper.active #sidebar-wrapper {
+      left: 250px;
+      width: 250px;
+      transition: all 0.4s ease 0s;
+    }
+
+}
 </style>
 <body>
 
