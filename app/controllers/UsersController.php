@@ -110,15 +110,15 @@ class UsersController extends \BaseController {
 		$id = Auth::user()->id;
 		$user = User::findOrFail($id);
 		
-		$q = SphinxQL::raw("select json.leg_id leg_id, json.first_name, json.last_name, json.email, json.office_phone from rt_legs where json.district = $user->leg_district");
+		$q = SphinxQL::raw("select json.leg_id leg_id, json.first_name, json.last_name, json.email, json.office_phone from legislators where json.district = $user->leg_district");
 		
 		foreach($q as $id){
 		$f_id[] = $id["leg_id"];
 		}
 		
-		$h1 = SphinxQL::raw("select json.id AS b_id, json['versions'][0]['name'] AS name, json['title'] AS title, json['versions'][0]['url'] AS url1, json['sources'][0]['url'] AS url2, json['subjects'] AS subjects from rt_u_bills where json['sponsors'][0]['leg_id']='$f_id[0]'");
-		$h2 = SphinxQL::raw("select json.id AS b_id, json['versions'][0]['name'] AS name, json['title'] AS title, json['versions'][0]['url'] AS url1, json['sources'][0]['url'] AS url2, json['subjects'] AS subjects from rt_l_bills where json['sponsors'][0]['leg_id']='$f_id[1]'");
-		$s = SphinxQL::raw("select json.id AS b_id, json['versions'][0]['name'] AS name, json['title'] AS title, json['versions'][0]['url'] AS url1, json['sources'][0]['url'] AS url2, json['subjects'] AS subjects from rt_l_bills where json['sponsors'][0]['leg_id']='$f_id[2]'");
+		$h1 = SphinxQL::raw("select json.id AS b_id, json['versions'][0]['name'] AS name, json['title'] AS title, json['versions'][0]['url'] AS url1, json['sources'][0]['url'] AS url2, json['subjects'] AS subjects from u_bills where json['sponsors'][0]['leg_id']='$f_id[0]'");
+		$h2 = SphinxQL::raw("select json.id AS b_id, json['versions'][0]['name'] AS name, json['title'] AS title, json['versions'][0]['url'] AS url1, json['sources'][0]['url'] AS url2, json['subjects'] AS subjects from l_bills where json['sponsors'][0]['leg_id']='$f_id[1]'");
+		$s = SphinxQL::raw("select json.id AS b_id, json['versions'][0]['name'] AS name, json['title'] AS title, json['versions'][0]['url'] AS url1, json['sources'][0]['url'] AS url2, json['subjects'] AS subjects from l_bills where json['sponsors'][0]['leg_id']='$f_id[2]'");
 		
 		foreach($h1 as $h1_get_subs){
 		$h1_subjects[] = explode(',', $h1_get_subs['subjects']);

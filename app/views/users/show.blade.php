@@ -25,7 +25,6 @@
 			<h4>Politicians from your district are the Primary Sponsor of these bills:</h4>
 				<div class="col-md-4" style="height:400px; overflow-y:scroll;">
 				<h4 style="background:black; color:white; text-align:center; "><strong>{{$q[0]['json.first_name']}} {{$q[0]['json.last_name']}}</strong></h4>
-				{{var_dump($h1_subjects)}}
 				@foreach($h1 as $v)
 				<div style="border-style:dotted; border-width:2px; padding:5px; margin-bottom:5px;">
 					<p><strong>{{ $v['name'] }}</strong></p>
@@ -35,7 +34,7 @@
 				</div>
 				@endforeach
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4" style="height:400px; overflow-y:scroll;">
 				<h4 style="background:black; color:white; text-align:center;"><strong>{{$q[1]['json.first_name']}} {{$q[1]['json.last_name']}}</strong></h4>
 				@foreach($h2 as $v2)
 				<div style="border-style:dotted; border-width:2px; padding:5px; margin-bottom:5px; ">
@@ -46,7 +45,7 @@
 				</div>
 				@endforeach
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4" style="height:400px; overflow-y:scroll;">
 				<h4 style="background:black; color:white; text-align:center;"><strong>{{$q[2]['json.first_name']}} {{$q[2]['json.last_name']}}</strong></h4>
 				@foreach($s as $v3)
 				<div style="border-style:dotted; border-width:2px; padding:5px; margin-bottom:5px;">
