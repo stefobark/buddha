@@ -121,6 +121,7 @@ body {
      	</div>
      	<div class="navbar-collapse collapse">
        	<ul class="nav navbar-nav navbar-right">
+       			<li><a href="{{ URL::route('users.show') }}"><strong><div id="test">profile</div></strong></a></li>
         	 	<li><a href="/users/create" ><strong><div id="test">sign up</div></strong></a></li>
         	 	<li><a href="/login"><strong>login</strong></a></li>
          	<li><a href="{{URL::to('signout')}}"><strong>sign out</strong></a></li>

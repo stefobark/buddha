@@ -42,6 +42,11 @@
 						<p>{{ $v2['title'] }}</p>
 						<p><a href='{{ $v2['url2'] }}'>Read the bill here.</a></p>
 						<p>{{ $v2['subjects'] }}</p>
+						{{ Form::open(array('action' => 'Comments@store')) }}
+						{{ Form::textarea('comment', null, array('style' => 'width: 225px; height: 100px;', 'class' => 'form-control textbox')) }}
+						{{ Form::hidden('bill_id', $v2['name']) }}
+						{{ Form::submit('Submit') }}
+						{{ Form::close() }}
 				</div>
 				@endforeach
 				</div>
