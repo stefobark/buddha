@@ -41,7 +41,7 @@ class CommentController extends \BaseController {
 		$comment->user_id = $id;
 		$comment->save();
 		$comments = DB::table('comments')->select('comment')->where('bill_id', 'like', "%$b_id%")->get();
-		$bill_info = SphinxQL::raw("select json.id AS b_id, json['versions'][0]['name'] AS name, json['title'] AS title, json['versions'][0]['url'] AS url1, json['sources'][0]['url'] AS url2, json['subjects'] AS subjects from l_bills where bill_id=' $b_id'");
+		$bill_info = SphinxQL::raw("select json.id AS b_id, json['versions'][0]['name'] AS name, json['title'] AS title, json['sources'][0]['url'] AS url2, json['subjects'] AS subjects from l_bills where bill_id=' $b_id'");
 		return View::make('comments.show', array('comments' => $comments, 'bill_id' => $b_id, 'bill_info' => $bill_info));
 
 	}
