@@ -10,7 +10,7 @@
 		
 			<ul>
 				@foreach ($comments as $comment)
-					<li>{{ $comment->comment }}</li>
+					<li>{{$user->username}}: {{ $comment->comment }}</li>
 				@endforeach
 			</ul>
 		</div>
