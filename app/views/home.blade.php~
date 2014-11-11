@@ -2,7 +2,7 @@
 
 @section('content')
 <div id="wrap">
-	<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+	<div id="myCarousel" class="carousel slide" data-interval="9000" data-ride="carousel">
 	<!-- Carousel indicators -->
 	  <ol class="carousel-indicators">
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -12,24 +12,24 @@
 	 <!-- Carousel items -->
 	  <div class="carousel-inner">
 			<div class="active item">
-				 <h2>Slide 1</h2>
+				 <h2>Straight Up</h2>
 				 <div class="carousel-caption">
-					<h3>First slide label</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<h3>No bullshit</h3>
+					<p>Understand and discuss what your politicians are doing.</p>
 				 </div>
 			</div>
 			<div class="item">
-				 <h2>Slide 2</h2>
+				 <h2>Cause you know</h2>
 				 <div class="carousel-caption">
-					<h3>Second slide label</h3>
-					<p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
+					<h3>They're doing some crazy shit</h3>
+					<p>And if you don't point it out, who will?</p>
 				 </div>
 			</div>
 			<div class="item">
-				 <h2>Slide 3</h2>
+				 <h2>It's some real shit</h2>
 				 <div class="carousel-caption">
-					<h3>Third slide label</h3>
-					<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+					<h3>Take action</h3>
+					<p>Or, cry about it later.</p>
 				 </div>
 			</div>
 	  </div>
@@ -71,7 +71,6 @@
 				<h3 class="text-center">Some awesome graph</h3><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 			</div>
 		</div>
-		<div id="push"></div>
 	</div>
 	
 </div>
