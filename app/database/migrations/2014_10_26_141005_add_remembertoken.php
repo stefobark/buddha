@@ -28,7 +28,7 @@ class AddRemembertoken extends Migration {
 	{
 		Schema::table('users', function($table)
     {
-    	$table->dropColumn('remember_token', 100);
+    	$table->dropColumn('remember_token');
     
 	});
 	}
