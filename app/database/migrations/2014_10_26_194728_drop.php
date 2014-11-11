@@ -28,7 +28,13 @@ class Drop extends Migration {
 	 */
 	public function down()
 	{
-		//
+		Schema::table('users', function($table)
+{
+    $table->string('city');
+    $table->string('state');
+    $table->integer('zip');
+    $table->string('address');
+});
 	}
 
 }

@@ -26,7 +26,11 @@ class AddPassword extends Migration {
 	 */
 	public function down()
 	{
-		//
+		Schema::table('users', function($table)
+    {
+    	$table->dropColumn('password');
+    
+	});
 	}
 
 }

@@ -26,7 +26,11 @@ class AddUpdatedAt extends Migration {
 	 */
 	public function down()
 	{
-		//
+		Schema::table('comments', function($table)
+		{
+			$table->dropColumn('updated_at');
+			$table->dropColumn('created_at');
+		});
 	}
 
 }

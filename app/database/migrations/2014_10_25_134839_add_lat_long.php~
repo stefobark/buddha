@@ -12,7 +12,11 @@ class AddLatLong extends Migration {
 	 */
 	public function up()
 	{
-		//
+		Schema::table('users', function($table)
+    {
+    	$table->string('lat_long');
+    
+	});
 	}
 
 	/**

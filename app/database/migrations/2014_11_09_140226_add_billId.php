@@ -25,7 +25,10 @@ class AddBillId extends Migration {
 	 */
 	public function down()
 	{
-		//
+		Schema::table('comments', function($table)
+		{
+			$table->dropColumn('bill_id');
+		});
 	}
 
 }

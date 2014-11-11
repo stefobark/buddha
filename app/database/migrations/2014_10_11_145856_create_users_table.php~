@@ -24,12 +24,6 @@ class CreateUsersTable extends Migration {
         $table->timestamps();
         
     });
-    
-    Schema::table('users', function($table)
-    {
-    	$table->string('address');
-    	$table->integer('zip');
-    	}
 }
 
 public function down()

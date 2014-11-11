@@ -26,7 +26,11 @@ class AddLatLong extends Migration {
 	 */
 	public function down()
 	{
-		//
+		Schema::table('users', function($table)
+    {
+    	$table->dropColumn('lat_long');
+    
+	});
 	}
 
 }

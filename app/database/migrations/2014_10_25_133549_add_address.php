@@ -25,7 +25,11 @@ class AddAddress extends Migration {
 	 */
 	public function down()
 	{
-		//
+		Schema::table('users', function($table)
+    {
+    	$table->dropColumn('address');
+    	$table->dropColumn('zip');
+	});
 	}
 
 }

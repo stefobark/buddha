@@ -12,7 +12,11 @@ class AddUpdatedAt extends Migration {
 	 */
 	public function up()
 	{
-		//
+		Schema::table('comments', function($table)
+		{
+			$table->timestamp('updated_at');
+			$table->timestamp('created_at');
+		});
 	}
 
 	/**

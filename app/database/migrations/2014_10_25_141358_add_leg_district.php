@@ -26,7 +26,11 @@ class AddLegDistrict extends Migration {
 	 */
 	public function down()
 	{
-		//
+		Schema::table('users', function($table)
+    {
+    	$table->dropColumn('leg_district');
+    
+	});
 	}
 
 }
