@@ -12,24 +12,36 @@
 	 <!-- Carousel items -->
 	  <div class="carousel-inner">
 			<div class="active item">
-				 <h2>Straight Up</h2>
+				 <h2>Timeless Wisdom</h2>
 				 <div class="carousel-caption">
-					<h3>No bullshit</h3>
-					<p>we'll help you understand and discuss what your politicians are doing.</p>
+				 {{ HTML::image('img/buddha.jpg', 'buddha') }}
+					<h3>techgnosis brings Buddha to the interwebs</h3>
+					<p>Channel the ancient masters for spiritual guidance.</p>
 				 </div>
-			</div>
-			<div class="item">
-				 <h2>Cause you know</h2>
+				</div>
+				<div class="item">
+				 <h2> Confront your negative tendencies.</h2>
 				 <div class="carousel-caption">
-					<h3>They're doing some crazy shit</h3>
-					<p>if you don't point it out, who will?</p>
+				  {{ HTML::image('img/food_buddha.png', 'food buddha') }}
+					<h3>Celebrate your positive qualities!</h3>
+					<p><a href="/users/create">Sign up today.</a></p>
 				 </div>
-			</div>
-			<div class="item">
-				 <h2>It's some real shit</h2>
+				</div>
+				 <div class="item">
+				 <h2>What is this?</a></h2>
 				 <div class="carousel-caption">
-					<h3>Take action</h3>
-					<p>or, cry about it later.</p>
+					<h3><span style="color:#00CCFF;"><strong>techgnosis</strong></span> is a fun way to interact with ancient teachings. It's a bit like tarot, but based (so far) on ancient wisdom sayings from Buddhism and early Christianity (the so called "gnostic" teachings).</h3>
+					<br /><br /><h3 style="text-align:left;">Create an account to:</h3>
+					
+					<ul style="text-align:left;">
+					<li>comment on the sayings you receive in your readings.</li>
+					<li>like other people's comments</li>
+					<li>receive monthly summaries of your karmic scoreboard.</li>
+					<li>And, as I continue to build the site, you'll get access to all sorts of crazy stuff!</li>
+					</ul>
+					<br/ ><br />
+					<p>If there's something more you'd like to see (a specific text to add to the collection, or some other functionality), just tell me.</p>
+					<p> Email me at steven.j.barker at gmail dot com!</p>
 				 </div>
 			</div>
 	  </div>
@@ -41,36 +53,7 @@
 			<span class="glyphicon glyphicon-chevron-right"></span>
 	  </a>
 	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4" style="outline: 1px solid #58ACFA">
-				<h3 class="text-center">bill comments</h3><br /><br /><br /><br /><br /><br /><br />
-			</div>
-			<div class="col-md-8" style="outline: 1px solid #58ACFA">
-				<p>People are saying things about bills. Join them. Or else.</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-8" style="outline: 1px solid #58ACFA">
-				<p>People are saying things about politicians. You better join them, god damnit!</p>
-			</div>
-			<div class="col-md-4" style="outline: 1px solid #58ACFA">
-				<h3 class="text-center">politician comments</h3><br /><br /><br /><br /><br /><br /><br />
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4" style="outline: 1px solid #58ACFA">
-				<h3 class="text-center">best explanations</h3><br /><br /><br /><br /><br /><br /><br />
-			</div>
-			<div class="col-md-8" style="outline: 1px solid #58ACFA">
-				<p>Everyone loves these explanations. You could be loved, too. If you're clever enough.</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12" style="outline: 1px solid #58ACFA">
-				<h3 class="text-center">Some awesome graph</h3><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-			</div>
-		</div>
-	</div>
-	
+
+				
+
 </div>

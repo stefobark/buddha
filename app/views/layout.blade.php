@@ -21,11 +21,13 @@ h2{
     font-family: "trebuchet ms", sans-serif;    
 }
 .item{
-    background: #333;    
+   
     text-align: center;
-    height: 300px !important;
+    height: 600px !important;
 }
+
 .carousel{
+	background-color: black;
     margin-top: 20px;
 }
 .bs-example{
@@ -43,6 +45,7 @@ h2{
 html,
 body {
   height: 100%;
+  background-color: black;
   /* The html and body elements cannot have any padding or margin. */
 }
 
@@ -59,7 +62,7 @@ body {
   width: 250px;
   background: #999;
   position: fixed;
-  height: 100%;
+  height: 1000px;
   overflow-y: auto;
   z-index: 1000;
   transition: all 0.4s ease 0s;
@@ -72,7 +75,6 @@ body {
 .sidebar-nav {
   position: absolute;
   top: 0;
-  width: 250px;
   list-style: none;
   margin-left: 10px;
   margin-top: 10px;
@@ -117,7 +119,7 @@ body {
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 	<div class="container">
    	<div class="navbar-header">
-      	<a class="navbar-brand" href="/"><div id="test"><p style="font-size:35px; color:white; position: absolute; left:10px"><strong>bythepeoples</strong></p></div></a>
+      	<a class="navbar-brand" href="/"><div id="test"><p style="font-size:35px; color:white; position: absolute; left:10px"><strong>techgnosis</strong></p></div></a>
      	</div>
      	<div class="navbar-collapse collapse">
        	<ul class="nav navbar-nav navbar-right" style="position:absolute; right:50px;">
@@ -129,7 +131,6 @@ body {
      	</div><!--/.nav-collapse -->
 	</div><!--/.container -->
 </nav>
-
        @yield('content')
        
     </body>

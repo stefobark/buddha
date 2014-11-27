@@ -1,48 +1,28 @@
 @extends('layout')
 
 @section('content')
-<div class="container" style="margin-top:75px">
-<div class="row">
-<div class="col-md-4">
-{{ Form::model($users, ['route' => 'users.store'])}}
-<div>
-   {{ Form::label('name', 'Name: ') }}
-   {{ Form::text('name') }}
-</div>
-<div>
-   {{ Form::label('email', 'Email: ') }}
-   {{ Form::text('email') }}
-</div>
-<div>
-   {{ Form::label('username', 'User Name: ') }}
-   {{ Form::text('username') }}
-</div>
-	{{ Form::label('password', 'Password') }}
-	{{ Form::password('password') }}
-<div>
-   {{ Form::label('address', 'Street Address: ') }}
-   {{ Form::text('address') }}
-</div>
-<div>
-   {{ Form::label('city', 'City: ') }}
-   {{ Form::text('city') }}
-</div>
-<div>
-   {{ Form::label('state', 'State: ') }}
-   {{ Form::text('state') }}
-</div>
-<div>
-   {{ Form::label('zip', 'Zip Code: ') }}
-   {{ Form::text('zip') }}
-</div>
-<div>
-   {{ Form::label('age', 'Age: ') }}
-   {{ Form::text('age') }}
-</div>
-	{{ Form::hidden('id', $user->id) }}
-<div>
-   {{ Form::submit('Create User') }}
-</div>
-{{ Form::close() }}
-</div>
+	<div style="position:relative;">
+		<img src="../img/dhammakaya-pagoda.jpg" style="width:1500px"></img>
+		<div class="container" style="position:absolute;top: 100px; left: 100px; ">
+			<div class="row">
+			{{ Form::model($users, ['route' => 'users.store'])}}
+			<div>
+				{{ Form::label('username', 'User Name: ') }}
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{ Form::text('username') }}
+			</div>
+			<div>
+				{{ Form::label('password', 'Password') }}
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{ Form::password('password') }}
+			</div>
+			<div>
+				{{ Form::label('email', 'Email: ') }}
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{ Form::text('email') }}
+			</div>
+			<div>
+				{{ Form::submit('Create Account') }}
+			</div>
+			{{ Form::close() }}
+			</div>
+		</div>
+	</div>
 @stop

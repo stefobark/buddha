@@ -7,13 +7,6 @@
 		<ul class="sidebar-nav">
 			<li class="sidebar-brand"><p style="font-size:50px; margin-top:75px;"><strong> {{ $user->username }} </strong></p></li>
 			<li><h4>Details:</h4>
-			<li><p><strong>Politicians from Disctrict #{{ $user->leg_district }}</strong></p></li>
-
-			<div class="pols">
-				@foreach ($q as $rep)
-					<li><a href="#viewRep"><strong>{{ $rep['json.first_name'] }} {{ $rep['json.last_name'] }}</strong></a>
-				@endforeach
-			</div>
 		</ul>
 	</div>
 </div>
@@ -33,7 +26,7 @@
 					<p>{{ $v['subjects'] }}</p>
 					{{ Form::open(array('action' => 'CommentController@store')) }}
 					{{ Form::textarea('comment', null, array('style' => 'width: 225px; height: 100px;', 'class' => 'form-control textbox')) }}
-					{{ Form::hidden('bill_id', $v2['name']) }}
+					{{ Form::hidden('bill_id', $v['name']) }}
 					{{ Form::submit('Submit') }}
 					{{ Form::close() }}
 				</div>
@@ -65,7 +58,7 @@
 						<p>{{ $v3['subjects'] }}</p>
 						{{ Form::open(array('action' => 'CommentController@store')) }}
 						{{ Form::textarea('comment', null, array('style' => 'width: 225px; height: 100px;', 'class' => 'form-control textbox')) }}
-						{{ Form::hidden('bill_id', $v2['name']) }}
+						{{ Form::hidden('bill_id', $v3['name']) }}
 						{{ Form::submit('Submit') }}
 						{{ Form::close() }}
 				</div>

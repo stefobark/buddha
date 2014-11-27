@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddRemembertoken extends Migration {
+class DropLatOng extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -13,10 +13,9 @@ class AddRemembertoken extends Migration {
 	public function up()
 	{
 		Schema::table('users', function($table)
-    {
-    	$table->string('remember_token', 100);
-    
-	});
+{
+    $table->dropColumn(array('lat_long', 'leg_district'));
+});
 	}
 
 	/**
@@ -27,10 +26,11 @@ class AddRemembertoken extends Migration {
 	public function down()
 	{
 		Schema::table('users', function($table)
-    {
-    	$table->dropColumn('remember_token');
+{
+    $table->integer('lat_long');
+    $table->integer('leg_district');
     
-	});
+});
 	}
 
 }

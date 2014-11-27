@@ -21,11 +21,13 @@ h2{
     font-family: "trebuchet ms", sans-serif;    
 }
 .item{
-    background: #333;    
+   
     text-align: center;
-    height: 300px !important;
+    height: 600px !important;
 }
+
 .carousel{
+	background-color: black;
     margin-top: 20px;
 }
 .bs-example{
@@ -43,6 +45,7 @@ h2{
 html,
 body {
   height: 100%;
+  background-color: black;
   /* The html and body elements cannot have any padding or margin. */
 }
 
@@ -61,7 +64,7 @@ body {
   position: fixed;
   height: 100%;
   overflow-y: auto;
-  z-index: 1000;
+
   transition: all 0.4s ease 0s;
 }
 
@@ -72,7 +75,6 @@ body {
 .sidebar-nav {
   position: absolute;
   top: 0;
-  width: 250px;
   list-style: none;
   margin-left: 10px;
   margin-top: 10px;
@@ -117,10 +119,10 @@ body {
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 	<div class="container">
    	<div class="navbar-header">
-      	<a class="navbar-brand" href="/"><div id="test"><p style="font-size:35px; color:white; position: absolute; left:10px"><strong>bythepeoples</strong></p></div></a>
+      	<a class="navbar-brand" href="/"><div id="test"><p style="font-size:35px; color:white; position: absolute; left:10px"><strong>techgnosis</strong></p></div></a>
      	</div>
      	<div class="navbar-collapse collapse">
-       	<ul class="nav navbar-nav navbar-right" style="position:absolute; right:10px;">
+       	<ul class="nav navbar-nav navbar-right" style="position:absolute; right:50px;">
        			<li><a href="{{ URL::route('users.show') }}"><strong><div id="test">profile</div></strong></a></li>
         	 	<li><a href="/users/create" ><strong><div id="test">sign up</div></strong></a></li>
         	 	<li><a href="/login"><strong>login</strong></a></li>
@@ -129,7 +131,6 @@ body {
      	</div><!--/.nav-collapse -->
 	</div><!--/.container -->
 </nav>
-
        @yield('content')
        
     </body>
