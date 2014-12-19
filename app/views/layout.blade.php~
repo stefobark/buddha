@@ -10,8 +10,13 @@
 <style>
 
 .navbar-default {
-    background-color: #444;
-    border-color: #FFF;
+	min-height: 75px;
+	background: linear-gradient(to bottom, rgba(40, 40, 40, 1),  rgba(0, 0, 0, 0));
+    border-style: none;
+    
+}
+body{
+background-color:black;
 }
 h2{
     margin: 0;     
@@ -28,89 +33,22 @@ h2{
 
 .carousel{
 	background-color: black;
-    margin-top: 20px;
+    margin-top: 0px;
+    height:100%!important;
 }
+
 .bs-example{
 	margin: 20px;
 }
 
 .navbar .nav > li > a{
+margin-top:10px;
   text-shadow: #333 0.8em 0.8em 0.8em;
-  color: #fff!important;
 }
 
 .row{
 	margin-top:50px;
 	}
-html,
-body {
-  height: 100%;
-  background-color: black;
-  /* The html and body elements cannot have any padding or margin. */
-}
-
-}	
-#wrapper {
-  padding-left: 250px;
-  transition: all 0.4s ease 0s;
-}
-
-#sidebar-wrapper {
-  margin-left: -250px;
-  margin-top: -30px;
-  left: 250px;
-  width: 250px;
-  background: #999;
-  position: fixed;
-  height: 100%;
-  overflow-y: auto;
-
-  transition: all 0.4s ease 0s;
-}
-
-#page-content-wrapper {
-  width: 100%;
-}
-
-.sidebar-nav {
-  position: absolute;
-  top: 0;
-  list-style: none;
-  margin-left: 10px;
-  margin-top: 10px;
-  padding: 0;
-}
-
-.pols {
-	background: #fff;
-	box-shadow: 10px 10px 5px #888888;
-	border: 2px solid;
-    border-radius: 25px;
-    padding: 10px;
-    width: 200px;
-    text-align: center;
-	}
-
-@media (max-width:767px) {
-
-    #wrapper {
-      padding-left: 0;
-    }
-
-    #sidebar-wrapper {
-      left: 0;
-    }
-
-    #wrapper.active {
-      position: relative;
-      left: 250px;
-    }
-
-    #wrapper.active #sidebar-wrapper {
-      left: 250px;
-      width: 250px;
-      transition: all 0.4s ease 0s;
-    }
 
 }
 </style>
@@ -119,14 +57,14 @@ body {
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 	<div class="container">
    	<div class="navbar-header">
-      	<a class="navbar-brand" href="/"><div id="test"><p style="font-size:35px; color:white; position: absolute; left:10px"><strong>techgnosis</strong></p></div></a>
+      	<a class="navbar-brand" href="/"><div id="test"><p style="font-size:35px; color:white; position: absolute; left:10px; top:-10px;"><img src="/img/techgnosis.png"></strong></p></div></a>
      	</div>
      	<div class="navbar-collapse collapse">
        	<ul class="nav navbar-nav navbar-right" style="position:absolute; right:50px;">
-       			<li><a href="{{ URL::route('users.show') }}"><strong><div id="test">profile</div></strong></a></li>
-        	 	<li><a href="/users/create" ><strong><div id="test">sign up</div></strong></a></li>
-        	 	<li><a href="/login"><strong>login</strong></a></li>
-         	<li><a href="{{URL::to('signout')}}"><strong>sign out</strong></a></li>
+       			<li><a href="{{ URL::route('users.show') }}"><strong><div id="test"><img src="/img/profile.png"></div></strong></a></li>
+        	 	<li><a href="/users/create" ><strong><div id="test"><img src="/img/register.png"></div></strong></a></li>
+        	 	<li><a href="/login"><strong><img src="/img/login.png"></strong></a></li>
+         	<li><a href="{{URL::to('signout')}}"><strong><img src="/img/logout.png"></strong></a></li>
        	</ul>
      	</div><!--/.nav-collapse -->
 	</div><!--/.container -->

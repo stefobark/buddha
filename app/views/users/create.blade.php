@@ -2,7 +2,7 @@
 
 @section('content')
 	<div style="position:relative;">
-		<img src="../img/dhammakaya-pagoda.jpg" style="width:1500px"></img>
+		<img src="../img/dhammakaya-pagoda.jpg" style="width:100%"></img>
 		<div class="container" style="position:absolute;top: 100px; left: 100px; ">
 			<div class="row">
 			{{ Form::model($users, ['route' => 'users.store'])}}

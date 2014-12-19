@@ -57,8 +57,26 @@ class UsersController extends \BaseController {
 	{
 		$id = Auth::user()->id;
 		$user = User::findOrFail($id);
+		$rand = rand(0,422);
+		$rand1 = rand(-3,3);
+			if($rand1 < 0){
+				$rand1 = "neg".$rand1;
+				}
+		$rand2 = rand(-3,3);
+		if($rand2 < 0){
+				$rand2 = "neg".$rand2;
+				}
+		$rand3 = rand(-3,3);
+		if($rand3 < 0){
+				$rand3 = "neg".$rand3;
+				}
+		$rand4 = rand(-3,3);
+		if($rand4 < 0){
+				$rand4 = "neg".$rand4;
+				}
+		$dhamma = DB::table('dhammapadas')->where('id', "$rand")->get();
 		
-		return View::make('users.show')->with('user', $user);
+		return View::make('users.show', array('user' => $user, 'dhamma' => $dhamma, 'rand1' => $rand1, 'rand2' => $rand2, 'rand3' => $rand3, 'rand4' => $rand4));
 	}
 
 	public function signOut() {

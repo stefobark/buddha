@@ -1,18 +1,19 @@
 @extends('layout')
 
 @section('content')
-
-<div id="wrapper">
-	<div id="sidebar-wrapper">
-		<ul class="sidebar-nav">
-			<li class="sidebar-brand"><p style="font-size:50px; margin-top:75px;"><strong> {{ $user->username }} </strong></p></li>
-			<li><h4>Details:</h4>
-		</ul>
-	</div>
-</div>
-<div class="container">
 	<div class="row">
-		<div class="col-md-3"></div>
+		<div class="col-md-3">
+			<ul style="list-style:none">
+				<li><p style="font-size:25px; margin-top:20px;"><h1><strong>{{ $user->username }}, </strong></h1></p></li>
+				<li><h3>Consider the following sayings.</h3></li>
+				<li><strong>Dhammapada:</strong></li>
+				<li><p>{{$dhamma[0]->content}}</p></li>
+			</ul>
+		</div><div class="col-md-1"></div>
+		<div class="col-md-5">
+			<h1 style="text-align:center; color:#fff"><strong>Your Relation to the Four Noble Truths:</strong></h1>
+			<div style="text-align:center; background-color:#fff!important; padding-top:50px; padding-bottom: 50px; border-radius: 30px; margin-top:40px;">{{ HTML::image("img/4truths/1-$rand1.png", 'buddha') }}{{ HTML::image("img/4truths/2-$rand2.png", 'buddha') }}{{ HTML::image("img/4truths/3-$rand3.png", 'buddha') }}{{ HTML::image("img/4truths/4-$rand4.png", 'buddha') }}</div>
+		</div>
 	</div>
 </div>
 	
