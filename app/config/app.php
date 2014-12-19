@@ -119,9 +119,7 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-		'mnshankar\Sphinxql\SphinxqlServiceProvider',
 		'Way\Generators\GeneratorsServiceProvider',
-		'Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider'
 
 	),
 /*
