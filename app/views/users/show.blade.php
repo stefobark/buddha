@@ -5,9 +5,7 @@
 		<div class="col-md-3">
 			<ul style="list-style:none">
 				<li><p style="font-size:25px; margin-top:20px;"><h1><strong>{{ $user->username }}, </strong></h1></p></li>
-				<li><h3>Consider the following sayings.</h3></li>
-				<li><strong>Dhammapada:</strong></li>
-				<li><p>{{$dhamma[0]->content}}</p></li>
+				
 			</ul>
 		</div><div class="col-md-1"></div>
 		<div class="col-md-5">
