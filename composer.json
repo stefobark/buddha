@@ -4,8 +4,7 @@
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
 	"require": {
-		"laravel/framework": "4.1.*",
-		"guzzlehttp/guzzle": "~5.0"
+		"laravel/framework": "4.1.*"
 	},
 	"autoload": {
 		"classmap": [
@@ -30,10 +29,7 @@
 		]
 	},
 		"require-dev":{
- "xethron/migrations-generator": "dev-master",
- "foolz/sphinxql-query-builder": "dev-master",
- "mnshankar/sphinxql": "dev-master",
-		"guzzlehttp/guzzle": "~5.0"
+ "xethron/migrations-generator": "dev-master"
 	},
 	"config": {
 		"preferred-install": "dist"
