@@ -4,7 +4,7 @@
 	<div class="row">
 		<div class="col-md-3">
 			<ul style="list-style:none">
-				<li><p style="font-size:25px; margin-top:20px;"><h1><strong>{{ $user->username }}, </strong></h1></p></li>
+				<li><p style="font-size:25px; margin-top:40px;"><h1><strong>Hello {{ $user->username }} </strong></h1></p></li>
 				
 			</ul>
 		</div><div class="col-md-1"></div>
