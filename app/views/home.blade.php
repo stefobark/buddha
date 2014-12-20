@@ -8,7 +8,6 @@
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 			<li data-target="#myCarousel" data-slide-to="1"></li>
 			<li data-target="#myCarousel" data-slide-to="2"></li>
-			<li data-target="#myCarousel" data-slide-to="3"></li>
 	  </ol>   
 	 <!-- Carousel items -->
 	  <div class="carousel-inner">
@@ -21,11 +20,6 @@
 					<div class="item">
 				 <div class="carousel-caption">
 				  {{ HTML::image('img/interwebs.png', 'profound random number generation') }}
-				 </div>
-				 </div>
-				 <div class="item">
-				 <div class="carousel-caption">
-				  {{ HTML::image('img/teachings.png', 'perfect teachings') }}
 				 </div>
 				 </div>
 				<div class="item">

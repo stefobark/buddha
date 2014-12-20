@@ -76,6 +76,15 @@ class UsersController extends \BaseController {
 				}
 		$dhamma = DB::table('dhammapadas')->where('id', "$rand")->get();
 		
+		$fourTruth = new fourTruth;
+		
+		$fourTruth->uid = $id;
+		$fourTruth->one = $rand1;
+		$fourTruth->two = $rand2;
+		$fourTruth->three = $rand3;
+		$fourTruth->four = $rand4;
+		$fourTruth->save();
+		
 		return View::make('users.show', array('user' => $user, 'dhamma' => $dhamma, 'rand1' => $rand1, 'rand2' => $rand2, 'rand3' => $rand3, 'rand4' => $rand4));
 	}
 
