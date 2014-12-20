@@ -6,10 +6,10 @@
 			<ul style="list-style:none">
 				<li><p style="font-size:25px; margin-top:40px;"><h1><strong>Hello {{ $user->username }}</strong></h1></p></li>
 				<li><h3>Karmic Scoreboard (average scores)</h3></li>
-				<li><h4>1st Noble Truth: {{ $oneAvg }} </li>
-				<li>2nd Noble Truth: {{ $twoAvg }} </li>
-				<li>3rd Noble Truth: {{ $threeAvg }} </li>
-				<li>4th Noble Truth: {{ $fourAvg }} </h4></li>
+				<li><h4>1st Noble Truth: {{ $oneAvg }}</h4></li>
+				<li><h4>2nd Noble Truth: {{ $twoAvg }}</h4> </li>
+				<li><h4>3rd Noble Truth: {{ $threeAvg }} </h4></li>
+				<li><h4>4th Noble Truth: {{ $fourAvg }} </h4></li>
 			</ul>
 		</div><div class="col-md-1"></div>
 		<div class="col-md-5">
