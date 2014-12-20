@@ -2,7 +2,7 @@
 
 @section('content')
 	<div class="row">
-		<div class="col-md-3">
+		<div class="col-md-3" style="background-color:#ffh!important; border-radius: 30px;>
 			<ul style="list-style:none">
 				<li><p style="font-size:25px; margin-top:40px;"><h1><strong>Hello {{ $user->username }}</strong></h1></p></li>
 				<li><h3>Karmic Scoreboard (average scores)</h3></li>
