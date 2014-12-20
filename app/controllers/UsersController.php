@@ -83,15 +83,9 @@ class UsersController extends \BaseController {
 		$dhamma = DB::table('dhammapadas')->where('id', "$rand")->get();
 		$fourTruth->save();
 		
+		$oneAvg = DB::raw("select avg(one) from four_truths where uid=$id");
 		
-		
-		
-		
-		
-		
-		
-		
-		return View::make('users.show', array('user' => $user, 'dhamma' => $dhamma, 'rand1' => $rand1, 'rand2' => $rand2, 'rand3' => $rand3, 'rand4' => $rand4));
+		return View::make('users.show', array('user' => $user, 'dhamma' => $dhamma, 'rand1' => $rand1, 'rand2' => $rand2, 'rand3' => $rand3, 'rand4' => $rand4, 'oneAvg' => $oneAvg));
 	}
 
 	public function signOut() {
