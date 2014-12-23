@@ -16,22 +16,20 @@
 			<h1 style="text-align:center; color:#fff"><strong>Your Relation to the Four Noble Truths:</strong></h1>
 			<div style="text-align:center; background-color:#fff!important; padding-top:50px; padding-bottom: 50px; border-radius: 30px; margin-top:40px; max-width:100%; height:auto;">
 				<div class="row">
-					{{ HTML::image("img/4truths/1-$rand1.png", 'buddha') }}
-					{{ HTML::image("img/4truths/2-$rand2.png", 'buddha') }}
-					{{ HTML::image("img/4truths/3-$rand3.png", 'buddha') }}
-					{{ HTML::image("img/4truths/4-$rand4.png", 'buddha') }}
-				</div>
-				<div class="row">
 					<div class="col-md-3">
+						{{ HTML::image("img/4truths/1-$rand1.png", 'buddha') }}
 						<h1 class="text-center">{{$one}}</h1>
 					</div>
 					<div class="col-md-3">
+						{{ HTML::image("img/4truths/2-$rand2.png", 'buddha') }}
 						<h1  class="text-center">{{$two}}</h1>
 					</div>
 					<div class="col-md-3">
+						{{ HTML::image("img/4truths/3-$rand3.png", 'buddha') }}
 						<h1  class="text-center">{{$three}}</h1>
 					</div>
 					<div class="col-md-3">
+						{{ HTML::image("img/4truths/4-$rand4.png", 'buddha') }}
 						<h1 class="text-center">{{$four}}</h1>
 					</div>
 				</div>
