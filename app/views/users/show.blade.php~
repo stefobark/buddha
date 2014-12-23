@@ -14,8 +14,8 @@
 		</div><div class="col-md-1"></div>
 		<div class="col-md-5">
 			<h1 style="text-align:center; color:#fff"><strong>Your Relation to the Four Noble Truths:</strong></h1>
-			<div style="text-align:center; background-color:#fff!important; padding-top:50px; padding-bottom: 50px; border-radius: 30px; margin-top:40px; max-width:720px; height:auto;">
-				<div class="text-center" style="max-width:560px; height:auto; margin: 0 auto;">
+			<div style="text-align:center; background-color:#fff!important; padding-top:50px; padding-bottom: 50px; border-radius: 30px; margin-top:40px; max-width:800px; height:auto;">
+				<div class="text-center" style="max-width:600px; height:auto; margin: 0 auto;">
 					<div class="row">
 						<div class="col-md-3">
 							{{ HTML::image("img/4truths/1-$rand1.png", 'buddha') }}
