@@ -16,21 +16,21 @@
 			<h1 style="text-align:center; color:#fff"><strong>Your Relation to the Four Noble Truths:</strong></h1>
 			<div style="text-align:center; background-color:#fff!important; padding-top:50px; padding-bottom: 50px; border-radius: 30px; margin-top:40px; max-width:800px; height:auto;">
 				<div class="row" style="max-width:100%; height:auto; margin: 0 auto; position:relative; overflow: hidden;">
-					<div class="col-md-3" style="max-width:200px!important; height:auto">
-						{{ HTML::image("img/4truths/1-$rand1.png", 'buddha') }}
-						<h1 class="text-center">{{$one}}</h1>
+					<div class="col-md-3 text-center" >
+						<h1>The First Noble Truth: Dukkha exists.</h1>
+						<h2>{{$one}}</h2>
 					</div>
-					<div class="col-md-3" style="max-width:200px!important; height:auto">
-						{{ HTML::image("img/4truths/2-$rand2.png", 'buddha') }}
-						<h1  class="text-center">{{$two}}</h1>
+					<div class="col-md-3 text-center">
+						<h1>The Second Noble Truth: Dukkha's roots.</h1>
+						<h2>{{$two}}</h2>
 					</div>
-					<div class="col-md-3" style="max-width:200px!important; height:auto">
-						{{ HTML::image("img/4truths/3-$rand3.png", 'buddha') }}
-						<h1  class="text-center">{{$three}}</h1>
+					<div class="col-md-3 text-center">
+						<h1>The Third Noble Truth: Dukkha can be overcome.</h1>
+						<h2>{{$three}}</h2>
 					</div>
-					<div class="col-md-3" style="max-width:200px!important; height:auto">
-						{{ HTML::image("img/4truths/4-$rand4.png", 'buddha') }}
-						<h1 class="text-center">{{$four}}</h1>
+					<div class="col-md-3 text-center">
+						<h1>The Fourth Noble Truth: The eightfold path toward the end of Dukkha.</h1>
+						<h2>{{$four}}</h2>
 					</div>
 				</div>
 			</div>
