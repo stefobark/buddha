@@ -22,17 +22,17 @@
 					{{ HTML::image("img/4truths/4-$rand4.png", 'buddha') }}
 				</div>
 				<div class="row">
-					<div class="col-md-2">
-						<h1>{{$one}}</h1>
+					<div class="col-md-3">
+						<h1 class="text-center">{{$one}}</h1>
 					</div>
-					<div class="col-md-2">
-						<h1>{{$two}}</h1>
+					<div class="col-md-3">
+						<h1  class="text-center">{{$two}}</h1>
 					</div>
-					<div class="col-md-2">
-						<h1>{{$three}}</h1>
+					<div class="col-md-3">
+						<h1  class="text-center">{{$three}}</h1>
 					</div>
-					<div class="col-md-2">
-						<h1>{{$four}}</h1>
+					<div class="col-md-3">
+						<h1 class="text-center">{{$four}}</h1>
 					</div>
 				</div>
 			</div>
