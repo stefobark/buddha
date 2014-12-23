@@ -18,19 +18,19 @@
 				<div class="row" style="max-width:100%; height:auto; margin: 0 auto; position:relative; overflow: hidden;">
 					<div class="col-md-3 text-center" >
 						<p>The First Noble Truth: Dukkha exists.</p>
-						<h2>{{$one}}</h2>
+						<h2 style="margin-bottom:10">{{$one}}</h2>
 					</div>
 					<div class="col-md-3 text-center">
 						<p>The Second Noble Truth: Dukkha's roots.</p>
-						<h2>{{$two}}</h2>
+						<h2 style="margin-bottom:10">{{$two}}</h2>
 					</div>
 					<div class="col-md-3 text-center">
 						<p>The Third Noble Truth: Dukkha can be overcome.</p>
-						<h2>{{$three}}</h2>
+						<h2 style="margin-bottom:10">{{$three}}</h2>
 					</div>
 					<div class="col-md-3 text-center">
 						<p>The Fourth Noble Truth: The eightfold path toward the end of Dukkha.</p>
-						<h2>{{$four}}</h2>
+						<h2 style="margin-bottom:10">{{$four}}</h2>
 					</div>
 				</div>
 			</div>
