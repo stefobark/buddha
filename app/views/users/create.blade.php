@@ -7,7 +7,7 @@
 			<div class="row">
 			{{ Form::model($users, ['route' => 'users.store'])}}
 				{{ BootForm::text('Username', 'username') }}
-				{{ BootForm::password(Password', 'password') }}
+				{{ BootForm::password('Password', 'password') }}
 				{{ BootForm::email('Email', 'email') }}
 				{{ BootForm::submit('Submit') }}
 			{{ BootForm::close() }}
