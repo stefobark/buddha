@@ -55,6 +55,10 @@ class UsersController extends \BaseController {
 	 */
 	public function show()
 	{
+	if (!Auth::check())
+{
+ 	Redirect::to('users.login')
+}
 		$id = Auth::user()->id;
 		$user = User::findOrFail($id);
 		$fourTruth = new fourTruth;

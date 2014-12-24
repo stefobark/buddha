@@ -15,8 +15,8 @@
 		</p>
 
 		<p>
-			{{ Form::label('email', 'Email Address') }}
-			{{ Form::text('email', Input::old('email'), array('placeholder' => 'awesome@awesome.com')) }}
+			{{ Form::label('username', 'Username') }}
+			{{ Form::text('username', Input::old('username'), array('placeholder' => 'username')) }}
 		</p>
 
 		<p>
@@ -26,4 +26,5 @@
 
 		<p>{{ Form::submit('Submit!') }}</p>
 	{{ Form::close() }}
+	<h4>Or, sign up <a href="/users/create" ><strong><div id="test">here.</strong></a>
  @stop

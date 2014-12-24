@@ -26,4 +26,5 @@
 
 		<p>{{ Form::submit('Submit!') }}</p>
 	{{ Form::close() }}
+	<h4>Or, sign up <a href="/users/create" ><strong><div id="test">here.</strong></a>
  @stop

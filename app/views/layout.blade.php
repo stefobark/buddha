@@ -62,7 +62,6 @@ margin-top:10px;
      	<div class="navbar-collapse collapse">
        	<ul class="nav navbar-nav navbar-right" style="position:absolute; right:50px;">
        			<li><a href="{{ URL::route('users.show') }}"><strong><div id="test"><img src="/img/profile.png"></div></strong></a></li>
-        	 	<li><a href="/users/create" ><strong><div id="test"><img src="/img/register.png"></div></strong></a></li>
         	 	<li><a href="/login"><strong><img src="/img/login.png"></strong></a></li>
          	<li><a href="{{URL::to('signout')}}"><strong><img src="/img/logout.png"></strong></a></li>
        	</ul>

@@ -57,7 +57,7 @@ margin-top:10px;
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 	<div class="container">
    	<div class="navbar-header">
-      	<a class="navbar-brand" href="/"><div id="test"><p style="font-size:35px; color:white; position: absolute; left:10px; top:-10px;"><img src="/img/techgnosis.png"></strong></p></div></a>
+      	<a class="navbar-brand" href="/"><div id="test"><p style="font-size:35px; color:white; position: absolute; left:10px; top:-15px;"><img src="/img/techgnosis.png"></strong></p></div></a>
      	</div>
      	<div class="navbar-collapse collapse">
        	<ul class="nav navbar-nav navbar-right" style="position:absolute; right:50px;">
