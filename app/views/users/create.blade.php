@@ -7,7 +7,7 @@
 			<div class="row">
 			{{ Form::model($users, ['route' => 'users.store', 'class' => 'clearfix'])}}
 				{{ Form::text('username', array('class' => 'form-control', 'placeholder' => 'Username')) }}
-				{{ Form::email('email', '', array('class' => 'form-control', 'placeholder' => 'Email')) }}
+				{{ Form::email('email', array('class' => 'form-control', 'placeholder' => 'Email')) }}
 				{{ Form::password('password', array('class' => 'form-control', 'placeholder' => 'Password')) }}
 				{{ Form::submit('Submit', array('class' => 'btn btn-primary')) }}
 			{{ Form::close() }}

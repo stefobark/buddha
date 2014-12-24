@@ -10,7 +10,7 @@
 				{{ Form::email('email', '', array('class' => 'form-control', 'placeholder' => 'Email')) }}
 				{{ Form::password('password', array('class' => 'form-control', 'placeholder' => 'Password')) }}
 				{{ Form::submit('Submit', array('class' => 'btn btn-primary')) }}
-				{{ Form::close() }}
+			{{ Form::close() }}
 			</div>
 		</div>
 	</div>
