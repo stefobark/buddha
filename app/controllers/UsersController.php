@@ -57,7 +57,7 @@ class UsersController extends \BaseController {
 	{
 	if (!Auth::check())
 {
- 	return Redirect::to('/login');
+ 	return Redirect::to('login');
 }
 		$id = Auth::user()->id;
 		$user = User::findOrFail($id);
