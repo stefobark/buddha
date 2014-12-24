@@ -12,7 +12,7 @@
 			</div>
 			<div>
 				{{ Form::label('password', 'Password') }}
-				{{ Form::password, array('class' => 'form-control', 'placeholder' => 'Password')) }}
+				{{ Form::password, array('class' => 'form-control', 'placeholder' => 'Password') }}
 			</div>
 			<div>
 				{{ Form::label('email', 'Email: ') }}
