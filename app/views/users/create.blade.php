@@ -5,7 +5,7 @@
 		<img src="../img/dhammakaya-pagoda.jpg" style="width:100%"></img>
 		<div class="container" style="position:absolute;top: 100px; left: 100px; ">
 			<div class="row">
-			{{ Form::model($users, ['route' => 'users.store'])}}
+			{{ BootForm::openRegister() }}
 				{{ BootForm::text('Username', 'username') }}
 				{{ BootForm::password('Password', 'password') }}
 				{{ BootForm::email('Email', 'email') }}
