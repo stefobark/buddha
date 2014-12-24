@@ -19,7 +19,7 @@
 				{{ Form::email('email', '', array('class' => 'form-control', 'placeholder' => 'Email')) }}
 			</div>
 			<div>
-				{{ Form::submit('Create Account'', array('class' => 'btn btn-primary')) }}
+				{{ Form::submit('Create Account', array('class' => 'btn btn-primary')) }}
 			</div>
 			{{ Form::close() }}
 			</div>
